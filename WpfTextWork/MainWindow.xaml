@@ -1,0 +1,170 @@
+﻿<Window x:Class="WpfTextWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTextWork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Paragraph">
+                <FlowDocumentScrollViewer>
+                    <FlowDocument>
+                        <Paragraph x:Name="FirstParagraph">
+                            <Run>
+                                aksndpainfpaiwn aSDLKNAKLJS FDAKJFBAOF AJD AKLJC AJWDAJS CKLAJSFCLAJKSC LAJKSF BCAL
+                            </Run>
+                        </Paragraph>
+                        <Paragraph x:Name="SecondParagraph">
+                            asdjcbaiojvbaofcbaofcbaoibcopaiiivioaoapaosmplams
+                        </Paragraph>
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+                
+            </TabItem>
+            <TabItem Header="List">
+                <FlowDocumentScrollViewer>
+                    <FlowDocument>
+                        <Paragraph FontWeight="Bold"> TEassasdwwww</Paragraph>
+                        <List>
+                            <ListItem>
+                                <Paragraph>oajbfoajwboab</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>asjcnosvbaobvoasbcoasvbaob</Paragraph>
+                            </ListItem>
+                        </List>
+                        <Paragraph>Else</Paragraph>
+                        <List MarkerStyle="Circle" MarkerOffset="2" x:Name="ListHistory">
+                            <ListItem>
+                                <Paragraph>aosdjvavabbvbvabvaba</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>aosdjvavabbvbvabvaba</Paragraph>
+                            </ListItem>
+                        </List>
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+            </TabItem>
+            <TabItem Header="Table">
+                <FlowDocumentScrollViewer>
+                    <FlowDocument>
+                        <Paragraph FontWeight="Bold">Content</Paragraph>
+                        <Table>
+                            <TableRowGroup>
+                                <TableRow>
+                                    <TableCell BorderBrush="Black" BorderThickness="1">
+                                        <Paragraph># p.p.</Paragraph>
+                                    </TableCell>
+
+                                    <TableCell BorderBrush="Black" BorderThickness="1">
+                                        <Paragraph>Name</Paragraph>
+                                    </TableCell>
+
+                                    <TableCell BorderBrush="Black" BorderThickness="1">
+                                        <Paragraph>Link</Paragraph>
+                                    </TableCell>
+                                </TableRow>
+                                
+                                <TableRow>
+                                    <TableCell>
+                                        <Paragraph>1.</Paragraph>
+                                    </TableCell>
+
+                                    <TableCell>
+                                        <Paragraph>Biography</Paragraph>
+                                    </TableCell>
+
+                                    <TableCell>
+                                        <Paragraph FontStyle="Italic" Foreground="Blue">https://github.com/mkMakz/Taxi</Paragraph>
+                                    </TableCell>
+                                </TableRow>
+                            </TableRowGroup>
+                        </Table>
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+            </TabItem>
+            <TabItem Header="Section">
+                <FlowDocumentScrollViewer>
+                    <FlowDocument>
+                        <Section FontFamily="Palation" Background="LightYellow" Padding="25" Margin="5">
+                            <Paragraph FontWeight="Bold">University 1950</Paragraph>
+                            <Paragraph>
+                                As follower of Gegel, he trested that the development of humanity moving step by step
+                            </Paragraph>
+
+                            <BlockUIContainer>
+                                <Button Content="Print" Command="ApplicationCommands.Print"></Button>
+                            </BlockUIContainer>
+                            
+                        </Section>
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+            </TabItem>
+            <TabItem Header="Floater">
+                <FlowDocumentScrollViewer>
+                    <FlowDocument>
+                        <Paragraph>
+                            akosjcfbaosjbaosvbaoivbaopvbaovbaoikvbaoivkbaoikvbaokvbaoivbaoivbaoivb
+                            <Run xml:space="preserve"></Run>
+                            <Floater FontSize="24"
+                                     FontStyle="Italic"
+                                     Foreground="Green"
+                                     Padding="5"
+                                     Margin="5,10,15,10"
+                                     Width="250"
+                                     HorizontalAlignment="Center">
+                                <Paragraph>Работа Википедии и других сайтов Фонда Викимедиа основана на движке MediaWiki. Особенности: Язык вики поддерживает гиперссылки для создания ссылок между вики-страницами и является более наглядным, чем HTML, и более безопасным, поскольку использование JavaScript и каскадных таблиц стилей ограничено. ВандализмНекоторые вики позволяют изменять их содержимое всем желающим, а не только зарегистрированным пользователям. Подобно тому, как стены зданий и заборы исписывают непристойными надписями и украшают рисунками граффити, в таких вики иногда портят содержимое или добавляют что-то неуместное. Но, в отличие от стен и заборов, в вики легко вернуть содержимое к ранней версии: исправлять легче, чем портить.</Paragraph>
+                            </Floater>
+                        </Paragraph>
+                        <Paragraph>Работа Википедии и других сайтов Фонда Викимедиа основана на движке MediaWiki. 
+                            Особенности: Язык вики поддерживает гиперссылки для создания ссылок между вики-страницами и является более наглядным, чем HTML, и более безопасным, поскольку использование JavaScript и каскадных таблиц стилей ограничено. 
+                            ВандализмНекоторые вики позволяют изменять их содержимое всем желающим, а не только зарегистрированным пользователям. Подобно тому, как стены зданий и заборы исписывают непристойными надписями и украшают рисунками граффити, в таких вики иногда портят содержимое или добавляют что-то неуместное. Но, в отличие от стен и заборов, в вики легко вернуть содержимое к ранней версии: исправлять легче, чем портить.
+                        </Paragraph>
+                        <Paragraph>
+                                Впервые термин «вики» для описания веб-сайта был использован в 1995 году Уордом Каннингемом, разработчиком первой вики-системы WikiWikiWeb, «Портлендского хранилища образцов» программного кода[2], созданной 25 марта 1995 года, который заимствовал слово гавайского языка, означающее «быстрый»[3][4].
+                            <Floater Width="330"
+                                     Padding="5,0,5,0"
+                                     HorizontalAlignment="Center">
+                                <BlockUIContainer>
+                                    <Image Source="/IMG/wallpaper_call_of_duty_ww2_01_1920x1080.jpg"></Image>
+                                </BlockUIContainer>
+                                
+                            </Floater>
+                                Впервые термин «вики» для описания веб-сайта был использован в 1995 году Уордом Каннингемом, разработчиком первой вики-системы WikiWikiWeb, «Портлендского хранилища образцов» программного кода[2], созданной 25 марта 1995 года, который заимствовал слово гавайского языка, означающее «быстрый»[3][4].
+                        </Paragraph>
+                        
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+            </TabItem>
+            <TabItem Header="RichTextBox">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="30"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <RichTextBox Grid.Row="0" x:Name="MyrichTextBox">
+                        <FlowDocument>
+                            <Paragraph FontWeight="Bold">Цитаты</Paragraph>
+                            <Paragraph>aopskvnaopvbinapikbnqapobvnap[obvnapobna[o</Paragraph>
+                            <Paragraph>aopskvnaopvbinapikbnqapobvnap[obvnapobna[o</Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+
+                    <Grid Grid.Row="1">
+                        <Button HorizontalAlignment="Left" Content="LoadDocument"
+                                x:Name="LoadDoc" Click="LoadDoc_Click"
+                                Width="150" Height="25"></Button>
+                        
+                        <Button HorizontalAlignment="Center" Content="SaveDocument"
+                                x:Name="SaveDoc" Click="SaveDoc_Click"
+                                Width="150" Height="25"></Button>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            
+        </TabControl>
+    </Grid>
+</Window>
